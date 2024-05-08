@@ -24,3 +24,18 @@ const objectCount = (array) =>{
 }
 
 console.log(objectCount(array))
+
+var str = "amarjeet"
+var diary = {}
+for(let i = 0; i<str.length; i++){
+  var char = str[i]
+
+  if(diary[char]==undefined){
+    diary[char]= 1
+  }else{
+    diary[char]= diary[char]+ 1
+  }
+}
+for(var key in diary){
+  console.log(key, " :", diary[key])
+}
